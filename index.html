@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USC Website - Dangal ng Bayan</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green py-2">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <img src="IMG/FINAL LOGO .png" alt="USC Logo" width="40" height="40" class="me-2 rounded-circle">
+        <div class="d-flex flex-column justify-content-center">
+          <span class="fw-bold nav-uni-title">UNIVERSITY STUDENT COUNCIL</span>
+          <small class="nav-uni-sub">PAMANTASAN NG CABUYAO (PNC)</small>
+        </div>
+      </div>
+      <div class="flex-grow-1 d-none d-lg-flex justify-content-center">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link px-3" href="#">HOME</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#about">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#usc">USG</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#csg">CSG</a></li>
+          <li class="nav-item"><a class="nav-link px-3" href="#ulc">ULC</a></li>
+        </ul>
+        <div class="d-flex align-items-center ms-auto">
+            <button class="btn btn-link text-white p-0 ms-2 d-none d-lg-block" id="searchBtn" aria-label="Search"><i class="bi bi-search fs-4"></i></button>
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center py-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center mb-2">
+        <div class="hero-line flex-grow-1 me-3"></div>
+        <h1 class="display-3 fw-bold main-title mb-0">DANGAL<br>NG BAYAN</h1>
+        <div class="hero-line flex-grow-1 ms-3"></div>
+      </div>
+      <h2 class="subtitle hero-subtitle">USC WEBSITES</h2>
+    </div>
+  </section>
+
+  <!-- Calendar & Events Section -->
+  <section class="container py-4">
+    <h3 class="fw-bold mb-3 section-title">CALENDAR OF ACTIVITY</h3>
+    <div class="row g-3 align-items-start event-title-aligner">
+      <div class="col-12 col-md-4">
+        <!-- Calendar Card -->
+        <div class="calendar-card p-3 rounded">
+          <div class="text-center fw-bold mb-2 calendar-month">January</div>
+          <table class="table table-borderless text-center mb-0 calendar-table">
+            <thead>
+              <tr>
+                <th>Mon</th><th>Tues</th><th>Wed</th><th>Thurs</th><th>Fri</th><th>Sat</th><th>Sun</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr>
+              <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+              <tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr>
+              <tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr>
+              <tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-12 col-md-8 event-title-col">
+        <div class="d-flex align-items-center mb-2">
+          <h4 class="fw-bold event-section-title me-3">TITLE</h4>
+          <div class="flex-grow-1 event-section-line"></div>
+        </div>
+        <div class="row g-3 event-slider align-items-center">
+          <div class="col-12 col-md-6">
+            <div class="card event-card h-100">
+              <img src="IMG/IMG_7108.JPG" class="card-img-top event-img" alt="Event 1">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">TITLE</h5>
+                <p class="card-text">Lorem ipsum dolor asdeswqhdwqhwq asdin ashd asudi asd asv asd ewq awq asd asd evawqev yuasd vvbuqdsf yuasdhiuasdhi jhgasd yqsdgasyad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card event-card h-100">
+              <img src="IMG/IMG_7108.JPG" class="card-img-top event-img" alt="Event 2">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">TITLE</h5>
+                <p class="card-text">Lorem ipsum dolor asdeswqhdwqhwq asdin ashd asudi asd asv asd ewq awq asd asd evawqev yuasd vvbuqdsf yuasdhiuasdhi jhgasd yqsdgasyad.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex align-items-center mt-2">
+          <div class="flex-grow-1 event-section-line"></div>
+          <button class="btn btn-link text-green fs-3 ms-2 p-0" aria-label="Next"><i class="bi bi-arrow-right-circle"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation Buttons Section -->
+  <section class="container py-4">
+    <div class="row g-4 text-center justify-content-center">
+      <div class="col-12 col-md-4 col-lg-3">
+        <button class="nav-btn w-100 py-4 rounded nav-btn-lg"><i class="bi bi-house-door fs-1"></i><br><span class="fw-bold">HOME</span></button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <button class="nav-btn w-100 py-4 rounded nav-btn-lg"><i class="bi bi-search fs-1"></i><br><span class="fw-bold">ABOUT</span></button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <button class="nav-btn w-100 py-4 rounded nav-btn-lg"><i class="bi bi-calendar-event fs-1"></i><br><span class="fw-bold">EVENTS</span></button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <button class="nav-btn w-100 py-4 rounded nav-btn-lg bg-lightgreen text-green"><img src="IMG/LOGOS - 3.png" alt="USC" class="img-fluid mb-1" style="max-height:50px;"><br><span class="fw-bold">University Student Council</span></button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <button class="nav-btn w-100 py-4 rounded nav-btn-lg bg-lightgreen text-green"><img src="IMG/FINAL LOGO .png" alt="Student Council" class="img-fluid mb-1" style="max-height:50px;"><br><span class="fw-bold">STUDENT COUNCIL</span></button>
+      </div>
+      <div class="col-12 col-md-4 col-lg-3">
+        <button class="nav-btn w-100 py-4 rounded nav-btn-lg"><img src="IMG/SEALS.zip - 7.png" alt="CBL" class="img-fluid mb-1" style="max-height:50px;"><br><span class="fw-bold">CBL</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concern Desk Section -->
+  <section class="container py-4">
+    <div class="concern-desk p-3 rounded">
+      <h4 class="fw-bold text-center mb-3">CONCERN DESK</h4>
+      <form>
+        <div class="mb-2">
+          <label for="name" class="form-label">NAME:</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-2">
+          <label for="studentNo" class="form-label">STUDENT NO:</label>
+          <input type="text" class="form-control" id="studentNo" required>
+        </div>
+        <div class="mb-2">
+          <label for="email" class="form-label">EMAIL:</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-2">
+          <label for="concern" class="form-label">CONCERN:</label>
+          <textarea class="form-control" id="concern" rows="2" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-green px-4">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-green text-white py-3 mt-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="footer-left">
+        <div class="fw-bold">PAMANTASAN NG CABUYAO<br>UNIVERSITY STUDENT COUNCIL</div>
+        <div class="small">Pamantasan ng Cabuyao, Katapatan Homes, Brgy. Banay-banay, Cabuyao City, Laguna<br>uscunc2942k@gmail.com</div>
+      </div>
+      <div class="footer-center my-2 my-md-0">
+        <img src="IMG/FINAL LOGO .png" alt="USC Logo" width="40" height="40" class="me-2 rounded-circle">
+        <img src="IMG/LOGOS - 3.png" alt="USC Logo 2" width="40" height="40" class="me-2 rounded-circle">
+      </div>
+      <div class="footer-right text-end">
+        <div>Stay Connected!</div>
+        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html> 
