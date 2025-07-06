@@ -161,6 +161,7 @@ function renderCalendar(month, year) {
 document.addEventListener('DOMContentLoaded', function() {
   const today = new Date();
   renderCalendar(today.getMonth(), today.getFullYear());
+  setupEventModal();
 });
 
 document.querySelectorAll('.nav-btn-grid').forEach(btn => {
@@ -241,3 +242,20 @@ document.querySelectorAll('.nav-btn-grid').forEach(btn => {
     document.head.appendChild(style);
   }
 })();
+
+// Event Modal logic for Read More buttons
+function setupEventModal() {
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const title = btn.getAttribute('data-title');
+      const img = btn.getAttribute('data-img');
+      const fulltext = btn.getAttribute('data-fulltext');
+      document.getElementById('eventModalLabel').textContent = title;
+      document.getElementById('eventModalImg').src = img;
+      document.getElementById('eventModalImg').alt = title;
+      document.getElementById('eventModalText').textContent = fulltext;
+      const modal = new bootstrap.Modal(document.getElementById('eventModal'));
+      modal.show();
+    });
+  });
+}
